@@ -1,0 +1,15 @@
+-Use asynchronous JavaScript tools to build a responsive web application.
+-Demonstrate understanding of the JavaScript event loop.
+-Generate asynchronous code using Promises and async/await syntax.
+-Use fetch and/or Axios to interact with an external web API.
+-Organize files using modules and imports.
+
+The speech-to-text API reference that i'll need to add to my capstone may be too much for this project.
+
+But could I still do a text-to-speech? Just clicking on words and a voice says them out loud?
+Both Google & IBM have APIs for this, I think.
+
+Better brainstorm some other ideas, just in case:
+-Simple APIs
+-Something with music?
+-Something with baseball?
