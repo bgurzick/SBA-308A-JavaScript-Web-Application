@@ -1,23 +1,70 @@
-async function fetchData() {
-    //two lines. fetches data.
-    const result = await fetch ( 'api URL here');
+// Major League Baseball current standings API
 
-    const data = await result.json();
+const url = 'https://major-league-baseball-mlb.p.rapidapi.com/standings?year=2020';
+const options = {
+	method: 'GET',
+	headers: {
+		'x-rapidapi-key': 'f56dfe3632msh1cf042281c4dec1p1c6d53jsn761f54e14fd2',
+		'x-rapidapi-host': 'major-league-baseball-mlb.p.rapidapi.com'
+	}
+};
 
-    // console.log(data.results[0].name);
-
-    // const nameDisplay = document.querySelector ('h1');
-    // nameDisplay.innerText = "first item in the array";
-
-    //loops through the list of pokemon fetched from the api
-    for(let i=0; i<data.results.length; i++) {
-        //create a new h1 element
-      const nameDisplay = document.createElement ('h1');
-      //sets the text of the element to pokemon name
-      nameDisplay.innerText = data.results[i].name;
-      //displays the element by appending it to the body
-      document.querySelector('body').appendChild(nameDisplay);  
-    }
+// async function to fetch data from the API
+async function fetchData(url, options) {
+  try {
+    const response = await fetch(url, options);
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error(error);
+    return null;
+  }
 }
 
-fetchData();
+// button click user interaction
+async function handleButtonClick(event) {
+  const formId = event.currentTarget.parentElement.id;
+  let question, correctAnswer;
+
+  switch (formId) {
+    case "al-east-form":
+      question = "AL East";
+      correctAnswer = "New York Yankees"; 
+      break;
+
+    case "al-west-form":
+      question = "AL West";
+      correctAnswer = "Houston Astros";
+      break;
+
+    case "al-central-form":
+      question = "AL Central";
+      correctAnswer = "Chicago White Sox";
+      break;
+
+    default:
+      break;
+  }
+
+  const resultDiv = document.getElementById("result");
+
+  try {
+    const data = await fetchData(url, options);
+    
+    // accessing the team standings array
+    const leadingTeam = data.find(team => team.league === "American" && team.division === question);
+    
+    if (leadingTeam && leadingTeam.team_name === correctAnswer) {
+      resultDiv.innerText = "Correct!";
+    } else {
+      resultDiv.innerText = "Incorrect. Try again!";
+    }
+  } catch (error) {
+    resultDiv.innerText = "Error fetching data.";
+  }
+}
+
+// event listeners on buttons for each form
+document.querySelectorAll(".answer-btn").forEach(button => {
+  button.addEventListener("click", handleButtonClick);
+});
