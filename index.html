@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MLB Quiz</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    
+  <div class="overlay">
+    <form id="quiz-form">
+      <h2>Who hit the most home runs for the Mariners?</h2>
+      <button type="button" class="answer-btn" data-answer="Edgar Martinez">Edgar Martinez</button>
+      <button type="button" class="answer-btn" data-answer="Ken Griffey Jr">Ken Griffey Jr</button>
+      <button type="button" class="answer-btn" data-answer="Ichiro Suzuki">Ichiro Suzuki</button>
+    </form>
+    <form id="stolen-bases-form">
+        <h2>Who stole more bases for the Mariners?</h2>
+        <button type="button" class="answer-btn" data-answer="Edgar Martinez">Edgar Martinez</button>
+        <button type="button" class="answer-btn" data-answer="Ken Griffey Jr">Ken Griffey Jr</button>
+        <button type="button" class="answer-btn" data-answer="Ichiro Suzuki">Ichiro Suzuki</button>
+    </form>
+    <form id="rbis-form">
+        <h2>Who had more RBIs for the Mariners?</h2>
+        <button type="button" class="answer-btn" data-answer="Edgar Martinez">Edgar Martinez</button>
+        <button type="button" class="answer-btn" data-answer="Ken Griffey Jr">Ken Griffey Jr</button>
+        <button type="button" class="answer-btn" data-answer="Ichiro Suzuki">Ichiro Suzuki</button>
+    </form>  
+    <div id="result"></div>
+  </div>
+
+  <script src="./script.mjs"></script>
 </body>
 </html>
