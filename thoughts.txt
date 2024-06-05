@@ -13,3 +13,5 @@ Better brainstorm some other ideas, just in case:
 -Simple APIs
 -Something with music?
 -Something with baseball?
+    Mariners baseball
+        Martinez, Griffey, Suzuki
