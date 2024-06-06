@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Breed Information</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="header">I Guess We'll Learn About Dogs</h1>    
+    </div>
+    
+    <div class="background-image"></div>
+  
+    <div class="overlay" id="breed-info-1">
+        <h2>Do you want to know about Affenpinscher?</h2>
+        <button onclick="displayBreedInfo('affenpinscher', 'breed-info-1')">Show Info</button>
+      </div>
+    
+      <div class="overlay" id="breed-info-2">
+        <h2>Do you want to know about Afghan Hound?</h2>
+        <button onclick="displayBreedInfo('afghan hound', 'breed-info-2')">Show Info</button>
+      </div>
+    
+      <div class="overlay" id="breed-info-3">
+        <h2>Do you want to know about Airedale Terrier?</h2>
+        <button onclick="displayBreedInfo('airedale terrier', 'breed-info-3')">Show Info</button>
+      </div>
+
+      <div class="footer">
+        <p>That's all folks!</p>
+      </div>
+      
+  <script src="./script.mjs"></script>
+</body>
+</html>
