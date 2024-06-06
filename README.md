@@ -11,9 +11,16 @@ It never would seem to fetch the data right.
 
 So I tried to just get the current American League Leaders and that didn't work right either.
 
-So then I got the simple dogs API just to try to have something that worked. And it appeared to effectively fetch the data. But then it didn't work when I tried to tie it to the buttons.
+So then I got the simple dogs API just to try to have something that worked. And it appeared to effectively fetch the data, but didn't initially work when I tried to tie it to the buttons.
 
-Not totally sure what I'm doing wrong. But I've run out of time.
+Eventually, I got something good and functioning, but I had to sacrifice a few of the recommended requirements. Although, of note, our temp. instructor, Patrick, said: "For the SBA: only the GET requirement is necessary. POST, PATCH, PUT requirements have been eliminated."  So that helps a little.
+
+
+BIG BIG lesson learned in this one, is to make sure my chosen API is functioning how I want to BEFORE I run with a concept and start writing code.
+
+Basically I had to burn everything down and start from scratch.  I wanted to do baseball, but we've got a couple of dog breeds instead.
+
+
 
 
 
