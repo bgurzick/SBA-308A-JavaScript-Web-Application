@@ -47,3 +47,15 @@
     font-size: 3em;
     font-family: sans-serif;
   }
+
+  .search-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 10px; 
+  }
+  
+  .search-container input,
+  .search-container button {
+    margin: 5px; 
+  }

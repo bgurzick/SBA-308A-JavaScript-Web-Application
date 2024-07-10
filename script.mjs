@@ -33,3 +33,16 @@ async function displayBreedInfo(breedName, containerId) {
     breedInfoDiv.innerHTML = `<p>Error fetching or processing data for ${breedName}.</p>`;
   }
 }
+
+function searchDogBreed() {
+  const searchInput = document.getElementById('search-input');
+  const breedName = searchInput.value.trim(); // to trim any disruptive spaces
+
+  //adds search results to empty container
+  if (breedName) {
+    displayBreedInfo(breedName, 'breed-info-4'); 
+    
+  } else{
+    alert('Search for a dog breed!');
+  }
+}
