@@ -16,9 +16,12 @@ So then I got the simple dogs API just to try to have something that worked. And
 Eventually, I got something good and functioning, but I had to sacrifice a few of the recommended requirements. Although, of note, our temp. instructor, Patrick, said: "For the SBA: only the GET requirement is necessary. POST, PATCH, PUT requirements have been eliminated."  So that helps a little.
 
 
-BIG BIG lesson learned in this one, is to make sure my chosen API is functioning how I want to BEFORE I run with a concept and start writing code.
+Big lesson learned in this one, is to make sure my chosen API is functioning how I want (and is the info I want) BEFORE I run with a concept and start writing code.
 
 Basically I had to burn everything down and start from scratch.  I wanted to do baseball, but we've got a couple of dog breeds instead.
+
+UPDATE: added search functionality
+
 
 
 
